@@ -9,8 +9,9 @@
 
 # Prerequisites
   * JDK 7 or higher
-  * [SAP HANA Cloud Platform SDK](https://tools.hana.ondemand.com/#cloud)(Java Web Tomcat 7)
-  * [Maven](https://wiki.wdf.sap.corp/wiki/display/LeanDI/Setup+Developer%27s+Workplace#SetupDeveloper%27sWorkplace-Maven3)
+  * [SAP HANA Cloud Platform Tools and SDK(Java Web Tomcat 7)](https://tools.hana.ondemand.com/#cloud)
+  * [Set up SDK location](https://help.hana.ondemand.com/help/frameset.htm?7613f514711e1014839a8273b0e91070.html)
+  * [Maven](https://maven.apache.org/)
   
 # Application startup
 1. Running locally
