@@ -1,13 +1,15 @@
 # Food-Calculator
-#Application startup
+# Application startup
 1. Locally
   * create new local server
-  * double-click on it, open Users tab and create new user with the required properties
+  * double-click on it, open Users tab and create new user with the required properties [example](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
   * double-click on the created server and choose the Connectivity tab
-#Authors
+
+# Authors
 Tsvetislav Victorov - https://github.com/cviktorov
 Svilen Komitov - https://github.com/svilenkomitov
-#Copyright and license
+
+# Copyright and license
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
 
 http://www.apache.org/licenses/LICENSE-2.0
