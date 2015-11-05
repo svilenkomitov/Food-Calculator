@@ -1,10 +1,12 @@
 # Food-Calculator
+
 #What we use
   * SAP HANA Cloud Platform identity service is used for user authentication [sample](https://help.hana.ondemand.com/help/frameset.htm?e637f62abb571014857cb0232adc43a7.html#loioe637f62abb571014857cb0232adc43a7)
   * The amount of the recipe nutrients(calories, proteins, ...) is stored using SAP HANA Cloud Platform persistence service [sample](https://help.hana.ondemand.com/help/frameset.htm?e4aeacd2bb5710148ee99255136d96a5.html)
   * Consuming [National Nutrition Database Service](http://ndb.nal.usda.gov/ndb/doc/index) using SAP HANA Cloud Platform connectivity service [sample](https://help.hana.ondemand.com/help/frameset.htm?e592cf6cbb57101495d3c28507d20f1b.html)
   * User Interface powered by SAPUI5. The application is compatible with mobile devices.
   * The whole communication process is handled via CXF REST services.
+
 # Prerequisites
   * JDK 7 or higher
   * [SAP HANA Cloud Platform SDK](https://tools.hana.ondemand.com/#cloud)(Java Web Tomcat 7)
