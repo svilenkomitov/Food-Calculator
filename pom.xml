@@ -1,0 +1,358 @@
+<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements. See the NOTICE file 
+    distributed with this work for additional information regarding copyright ownership. The ASF licenses this file to you under 
+    the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may 
+    obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to 
+    in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF 
+    ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under 
+    the License. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.sap.food.calculator</groupId>
+	<artifactId>com.sap.food.calculator</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<licenses>
+        	<license>
+           		<name>The Apache Software License, Version 2.0</name>
+            		<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+           	 	<distribution>repo</distribution>
+        	</license>
+    	</licenses>
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.plugin.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>${maven.war.plugin.version}</version>
+				<configuration>
+					<warSourceDirectory>WebContent</warSourceDirectory>
+				</configuration>
+			</plugin>
+			<!-- Include only unit tests for maven-surefire-plugin that is run in -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${org.apache.maven.plugins.version}</version>
+				<configuration>
+					<skipTests>${skip.tests}</skipTests>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>${org.apache.maven.plugins.version}</version>
+				<configuration>
+					<skipTests>${skip.tests}</skipTests>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<!-- profile for running tests -->
+		<profile>
+			<id>tests</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<skip.tests>false</skip.tests>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.sap.cloud</groupId>
+						<artifactId>neo-java-web-maven-plugin</artifactId>
+						<version>${cloudsdk.version}</version>
+						<executions>
+							<execution>
+								<id>setup-local-server</id>
+								<phase>pre-integration-test</phase>
+								<goals>
+									<goal>install-sdk</goal>
+									<goal>install-local</goal>
+									<goal>deploy-local</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>start-local-server</id>
+								<phase>integration-test</phase>
+								<goals>
+									<goal>start-local</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>cleanup-local-server</id>
+								<phase>post-integration-test</phase>
+								<goals>
+									<goal>stop-local</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<sdkInstallPath>${sap.cloud.sdk.path}</sdkInstallPath>
+							<location>${local.server.root}</location>
+							<httpPort>${local.server.http.port}</httpPort>
+							<ajpPort>${local.server.ajp.port}</ajpPort>
+							<configServicePort>${local.server.config.port}</configServicePort>
+							<jmxPort>${local.server.jmx.port}</jmxPort>
+							<source>${project.build.directory}/${project.artifactId}.war</source>
+						</configuration>
+					</plugin>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-failsafe-plugin</artifactId>
+						<version>${org.apache.maven.plugins.version}</version>
+						<executions>
+							<execution>
+								<id>execute-local-integration-tests</id>
+								<phase>integration-test</phase>
+								<goals>
+									<goal>integration-test</goal>
+								</goals>
+								<configuration>
+									<systemPropertyVariables>
+										<local.server.http.port>${local.server.http.port}</local.server.http.port>
+									</systemPropertyVariables>
+								</configuration>
+							</execution>
+							<execution>
+								<id>verify-local-integration-tests</id>
+								<goals>
+									<goal>verify</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+
+					<!-- We copy the admin / admin user to the deployed server -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-resources-plugin</artifactId>
+						<version>${maven.resource.plugin.version}</version>
+						<executions>
+							<execution>
+								<id>copy-resources</id>
+								<phase>pre-integration-test</phase>
+								<goals>
+									<goal>copy-resources</goal>
+								</goals>
+								<configuration>
+									<outputDirectory>${sap.cloud.sdk.path}/server/config_master/com.sap.security.um.provider.neo.local</outputDirectory>
+									<resources>
+										<resource>
+											<directory>src/test/java/resources/com.sap.security.um.provider.neo.local</directory>
+											<filtering>true</filtering>
+										</resource>
+									</resources>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<dependencies>
+		<!-- BEGIN Authentication dependencies -->
+		<dependency>
+			<groupId>com.sap.security</groupId>
+			<artifactId>com.sap.security.um</artifactId>
+			<version>${com.sap.security.um.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.sap.security</groupId>
+			<artifactId>com.sap.security.auth</artifactId>
+			<version>${com.sap.security.auth.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- END authentication dependencies -->
+		<!-- BEGIN testing dependencies -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>${mockito.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.squareup.retrofit</groupId>
+			<artifactId>retrofit</artifactId>
+			<version>${retrofit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- END testing dependencies -->
+		<!-- BEGIN logging dependencies -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>${org.slf4j.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- END logging dependencies -->
+		<!-- BEGIN persistence dependencies -->
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>${persistence-api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.persistence</groupId>
+			<artifactId>eclipselink</artifactId>
+			<version>${eclipselink.version}</version>
+		</dependency>
+		<!-- END persistence dependencies -->
+		<!-- BEGIN Apache CXF dependencies -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${com.fasterxml.jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${com.fasterxml.jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+			<version>${com.fasterxml.jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxrs</artifactId>
+			<version>${org.apache.cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+			<version>${org.apache.cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http-jetty</artifactId>
+			<version>${org.apache.cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-rs-extension-providers</artifactId>
+			<version>${org.apache.cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<version>${javax.ws.rs.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>${javaee.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-bundle-jaxrs</artifactId>
+			<version>${cxf-bundle-jaxrs.version}</version>
+		</dependency>
+		<!-- END Apache CXF dependencies -->
+		<!-- BEGIN dependencies -->
+		<dependency>
+			<groupId>com.sap.cloud</groupId>
+			<artifactId>neo-java-web-api</artifactId>
+			<version>${com.sap.cloud.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>${httpclient.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.faces</groupId>
+			<artifactId>com.springsource.com.sun.faces</artifactId>
+			<version>${com.sun.faces.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>javax.faces-api</artifactId>
+			<version>${javax.faces.version}</version>
+		</dependency>
+		<!-- END dependencies -->
+	</dependencies>
+	<!-- default properties -->
+	<properties>
+		<skip.tests>true</skip.tests>
+		<java.version>1.7</java.version>
+		<!-- BEGIN authentication dependencies properties -->
+		<com.sap.security.um.version>1.0.25</com.sap.security.um.version>
+		<com.sap.security.auth.version>2.0.8</com.sap.security.auth.version>
+		<!-- END authentication dependencies properties -->
+		<!-- BEGIN testing dependencies properties -->
+		<junit.version>4.11</junit.version>
+		<mockito.version>2.0.5-beta</mockito.version>
+		<retrofit.version>1.8.0</retrofit.version>
+		<!-- END testing dependencies properties -->
+		<!-- BEGIN logging dependencies properties -->
+		<org.slf4j.version>1.7.12</org.slf4j.version>
+		<!-- END logging dependencies properties -->
+		<!-- BEGIN dependencies properties -->
+		<com.sap.cloud.version>2.36.5</com.sap.cloud.version>
+		<gson.version>2.3.1</gson.version>
+		<httpclient.version>4.5</httpclient.version>
+		<com.sun.faces.version>2.0.0.PR2</com.sun.faces.version>
+		<javax.faces.version>2.2</javax.faces.version>
+		<!-- END dependencies properties -->
+		<!-- BEGIN persistence dependencies properties -->
+		<eclipselink.version>2.6.0</eclipselink.version>
+		<persistence-api.version>1.0.2</persistence-api.version>
+		<!-- END persistence dependencies properties -->
+		<!-- BEGIN Apache CXF dependencies properties -->
+		<com.fasterxml.jackson.version>2.6.1</com.fasterxml.jackson.version>
+		<org.apache.cxf.version>3.0.2</org.apache.cxf.version>
+		<javax.ws.rs.version>2.0-m10</javax.ws.rs.version>
+		<javaee.version>6.0</javaee.version>
+		<cxf-bundle-jaxrs.version>2.7.17</cxf-bundle-jaxrs.version>
+		<!-- END Apache CXF dependencies properties -->
+		<!-- BEGIN integration tests properties -->
+		<maven.resource.plugin.version>2.7</maven.resource.plugin.version>
+		<cloudsdk.version>2.14.8.1</cloudsdk.version>
+		<sap.cloud.sdk.path>${project.build.directory}/sdk</sap.cloud.sdk.path>
+		<local.server.http.port>8888</local.server.http.port>
+		<local.server.ajp.port>8889</local.server.ajp.port>
+		<local.server.config.port>8890</local.server.config.port>
+		<local.server.jmx.port>8891</local.server.jmx.port>
+		<org.apache.maven.plugins.version>2.19</org.apache.maven.plugins.version>
+		<!-- END integration tests properties -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.plugin.version>3.3</maven.compiler.plugin.version>
+		<maven.war.plugin.version>2.6</maven.war.plugin.version>
+	</properties>
+</project>

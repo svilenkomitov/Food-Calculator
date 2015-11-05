@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Food calculator</title>
+
+<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        id="sap-ui-bootstrap"
+        data-sap-ui-libs="sap.m, sap.ui.commons, sap.ui.table, sap.suite.ui.commons, sap.viz"
+        data-sap-ui-theme="sap_bluecrystal"
+       >
+</script>
+<script>
+///////////////////////////////////////////////////////////////////
+	  var newRecipeModel = new sap.ui.model.json.JSONModel();
+      sap.ui.getCore().setModel(newRecipeModel, "newRecipeModel");
+      newRecipeModel.loadData("imdb/json/recipe.json");
+      sap.ui.localResources("imdb");
+      var newRecipeView = sap.ui.view({
+      	id : "newRecipeView",
+      	viewName : "imdb.NewRecipeView",
+      	type : sap.ui.core.mvc.ViewType.JS
+      });
+      var page1 = new sap.m.Page("page1", {
+          backgroundDesign: "Transparent",
+          content : newRecipeView
+      });
+/////////////////////////////////////////////////////////    
+ 	  var allRecipesModel = new sap.ui.model.json.JSONModel();
+      sap.ui.getCore().setModel(allRecipesModel, "allRecipesModel");
+      //newRecipeModel.loadData("imdb/json/recipe.json");
+      sap.ui.localResources("imdb");
+     var allRecipesView = sap.ui.view({
+      	id : "allRecipesView",
+      	viewName : "imdb.AllRecipes",
+      	type : sap.ui.core.mvc.ViewType.JS
+      });
+      var page2 = new sap.m.Page("page2", {
+    	  title: "All recipes",
+          backgroundDesign: "Transparent",
+          content : allRecipesView
+      });
+      
+ /////////////////////////////////////////////////////////// 
+  var searchRecipeModel = new sap.ui.model.json.JSONModel();
+      sap.ui.getCore().setModel(searchRecipeModel, "searchRecipeModel");
+      //newRecipeModel.loadData("imdb/json/recipe.json");
+      sap.ui.localResources("imdb");
+     var searchRecipeView = sap.ui.view({
+      	id : "searchRecipeView",
+      	viewName : "imdb.SearchRecipeView",
+      	type : sap.ui.core.mvc.ViewType.JS
+      });
+      var page3 = new sap.m.Page("page3", {
+    	  title: "Search",
+          backgroundDesign: "Transparent",
+          content : searchRecipeView
+      });
+ ///////////////////////////////////////////
+     var app = sap.m.App("myApp",{homeIcon: "https://www.sap.com/global/images/SAPLogo.gif"});
+		
+		var tileContainer = new sap.m.TileContainer({
+			tiles: [new sap.m.StandardTile({
+				icon: "sap-icon://add",
+				title: "New Recipe",
+				info: "Add new recipe",
+				type: "Monitor",
+				infoState: "Success",
+				press: function() {
+					shell.removeAllCurtainContent();
+					shell.addCurtainContent(page1);
+				}
+			}), new sap.m.StandardTile({
+				icon: "sap-icon://list",
+				title: "Recipes",
+				info: "List of all recipes",
+				type: "Monitor",
+				infoState: "Success",
+				press: function() {
+					shell.removeAllCurtainContent();
+					shell.addCurtainContent(page2);
+				}
+			}),new sap.m.StandardTile({
+				icon: "sap-icon://search",
+				title: "Search",
+				info: "Search recipe by name",
+				type: "Monitor",
+				infoState: "Success",
+				press: function() {
+					shell.removeAllCurtainContent();
+					shell.addCurtainContent(page3);
+				}
+			})]
+		})
+		app.addPage(page1).addPage(tileContainer).addPage(page2);
+		var controller = sap.ui.controller("imdb.AuthenticationView");
+		var shell = new sap.ui.unified.Shell("unified-shell", {
+			icon: "https://www.sap.com/global/images/SAPLogo.gif",
+			showCurtain: true,
+			curtainContent: tileContainer,
+			headItems: [new sap.ui.unified.ShellHeadItem({
+				icon: "sap-icon://home",
+				press: function() {
+					shell.removeAllCurtainContent();
+					shell.addCurtainContent(tileContainer);
+				}})],
+			headEndItems: [ new sap.ui.unified.ShellHeadItem({
+				icon: "sap-icon://log",
+				press: function(oEvent) {
+					$.ajax({
+					url: "rest/user/logout",
+					type: "GET",
+					dataType: "json",
+					async: false,
+				}).success(function() {
+					
+					
+				}).fail(function() {
+					location.reload();
+				});
+				}})
+				],
+			user: new sap.ui.unified.ShellHeadUserItem("user", {
+				image: "sap-icon://person-placeholder",
+				username: controller.login(),
+				showPopupIndicator: false
+			})
+		})
+		
+		
+		new sap.m.Shell({
+			
+			app: shell
+		}).placeAt("content");
+   </script>
+</head>
+<body class="sapUiBody" id="content" role="application">
+
+</body>
+</html>

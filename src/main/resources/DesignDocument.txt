@@ -1,0 +1,120 @@
+0. Introduction - calculating recipe nutrition info based on generic products contained in the recipe
+1. Used API's - nutrition data about generic products
+
+	- National Nutrition Database - http://ndb.nal.usda.gov/ndb/doc
+		*Endpoints
+			1. Search - use free text to locate foods in the database 
+			- http://api.nal.usda.gov/ndb/search
+				Parameters: 
+					format=json
+					api_key=DEMO_KEY
+					q=//search terms
+					fg=//food group
+					sort=//n(name) or r(relevance)
+					max=//max elements to show
+				Response: ndbno=//product number
+			
+			2. Nutrient reports - obtain report for foods by product number(ndbno)
+			- http://api.nal.usda.gov/ndb/nutrients
+				Parameters:
+					format=json
+					api_key=DEMO_KEY
+					ndbno=//product number
+					nutrients=//nutrient id
+				Response: json containing nutrients report for the food
+		
+		*API key - http://ndb.nal.usda.gov/ndb/doc/index#
+		*Limitations - 1000 requests per hour per API key
+		*Licensing - No copyright, no permission needed
+
+2. Database Design - save nutrition data for the recipe(not the recipe content)
+	*Table name - RECIPE
+		-Attributes - id(recipe id),name(recipe name), servingValue, servingUnit(value and unit for one serving),
+		totalUnit, totalValue(total products value and unit), thermalThreatmentType(BOILED, FRIED...),
+		list of nutrients(contains nutrient name, value and unit) 	
+		-SQL queries
+			+ SELECT r FROM Recipe r -- get all recipes in the database
+			+ SELECT r FROM Recipe r WHERE LOWER(r.name) LIKE LOWER(:name) -- search recipe by name
+			+ SELECT r FROM Recipe r WHERE r.Id = :id -- find recipe by Id				
+
+2. Endpoints
+
+	* recipe CRUD operations - REST Service - /rest/recipe
+		+ /add - add recipe in the database; type: POST; post recipe nutrition data as json
+		+ /getByName - get recipe by name; type: GET;  parameters: name(string)
+		+ /getAll - get all recipes in DB; type: GET;
+		+ /delete - delete recipe by id; type:DELETE; parameters: id(long)
+		+ /update - update recipe === not implemented
+	
+	*authentication 
+		+ /login
+		+ /logout
+		
+	*get recipe products nutrition data - /createRecipe; type: POST; parameters: recipe
+		+request - send recipe content
+		{
+			"recipe": {
+   				 "name": "Shopska salata",
+    			 "unit": "kg",
+    			 "value": 10,
+    			 "serving-unit": "g",
+    			 "serving-value": 100,
+    			 "products": [
+        		  {
+            		"name": "tomato",
+            		"unit": "kg",
+            		"value": 5
+        		  }
+    			 ]
+			}
+		}
+		+response - get nutrition data for every product
+			{
+   				 "name": "Shopska salata",
+    			 "unit": "kg",
+    			 "value": 10,
+    			 "serving-unit": "g",
+    			 "serving-value": 100,
+    			 "products": [
+        		  {
+            		"name": "tomato",
+            		"unit": "kg",
+            		"value": 5,
+            		"nutrients": [
+            		 {
+            		 	"nutrient_id": "601",
+            		 	"nutrient": "Cholesterol",
+            		 	"unit": "mg",
+            		 	"value": "26",
+            		 	"gm": 90
+            		 }
+            		]
+        		  }
+    			 ]
+			}
+			
+4. Destinations
+		 Name: search-destination
+		 URL: http://api.nal.usda.gov
+		 api_key: 8SpljkHYGqCbAtWgYft0Ev4gKzKBvXoFXa2sA8Mo
+		 path: /ndb/search/
+		 scheme: http
+		 format: json
+----------------------------------------------------------------
+		 Name: report-destination
+		 URL: http://api.nal.usda.gov
+		 api_key: 8SpljkHYGqCbAtWgYft0Ev4gKzKBvXoFXa2sA8Mo
+		 path: /ndb/nutrients/
+		 scheme: http
+		 format: json
+		 
+		 
+5. Calculator
+	The user choose from UI the products which will cook, the value and the unit for each product,
+	the serving value and serving unit of the recipe(a portion), the value and the unit for all recipe,
+	the thermal treatment type and the name of the recipe.
+	When user press button "Calculate" it calculates the nutrients for serving value and serving unit.
+	All units are reduced to grams, expect calories - they are reduced to kilocalories. For each nutrient
+	the caluclator sums nutrient's value and distribute them in proportion to the value of product.
+	Once completed, it adds each nutrient change after the set cooking(thermal treatment type)
+	

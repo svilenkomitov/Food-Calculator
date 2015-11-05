@@ -1,0 +1,16 @@
+{
+	"recipeName": "Enter recipe name",
+	"servingValueInput": 0,
+	"totalValueInput": 0,
+	"productNameInput": "Enter product name",
+	"productValueInput": 0,
+	"calories": "N/A",
+	"sodium": "N/A",
+	"fiber": "N/A",
+	"protein": "N/A",
+	"fat-saturated": "N/A",
+	"fat-unsaturated": "N/A",
+	"sugar": "N/A",
+	"fat-trans": "N/A",
+	"cholesterol": "N/A"
+}
