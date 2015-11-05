@@ -2,11 +2,13 @@
 # Application startup
 1. Locally
   * create new local server
-  * double-click on it, open Users tab and create new user with the required properties [click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
-  * double-click on the created server and choose the Connectivity tab
-
+  * double-click on it, open Users tab and create new user with the required properties. [click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
+  * double-click on the created server, choose the Connectivity tab and create new Destination named "report-destination" and [properties](https://cloud.githubusercontent.com/assets/7129907/10973032/6ddfa900-83e4-11e5-9017-b508a0e1a7b5.jpg).
+  * double-click on the created server, choose the Connectivity tab and create new Destination named "report-destination" and [properties](https://cloud.githubusercontent.com/assets/7129907/10973035/6de53082-83e4-11e5-9c84-737d9ebf8736.jpg).
+ 
 # Authors
 Tsvetislav Victorov - https://github.com/cviktorov
+
 Svilen Komitov - https://github.com/svilenkomitov
 
 # Copyright and license
