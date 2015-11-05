@@ -1,12 +1,20 @@
 # Food-Calculator
+# Requirements
+  * JDK 7 or higher
+  * Eclipse IDE
+  * [SAP HANA Cloud Platform SDK](https://tools.hana.ondemand.com/#cloud)(Java Web Tomcat 7)
+  * [Maven](https://wiki.wdf.sap.corp/wiki/display/LeanDI/Setup+Developer%27s+Workplace#SetupDeveloper%27sWorkplace-Maven3)
+  
 # Application startup
 1. Running locally
+  * import as Maven project
   * create new local server
   * double-click on it, open Users tab and create new user with the required properties. [click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
   * double-click on the created server, choose the Connectivity tab and create new Destination named "report-destination" and [properties](https://cloud.githubusercontent.com/assets/7129907/10973032/6ddfa900-83e4-11e5-9017-b508a0e1a7b5.jpg)
   * double-click on the created server, choose the Connectivity tab and create new Destination named "search-destination" and [properties](https://cloud.githubusercontent.com/assets/7129907/10973035/6de53082-83e4-11e5-9c84-737d9ebf8736.jpg)
   * if you work behind a proxy server, then you should configure your proxy settings (host and port). Double click on the server, go to Overview tab and press the Open launch configuration. In the tab (x)= Arguments, VM Arguments copy this: -Dhttp.proxyHost= -Dhttp.proxyPort= -Dhttps.proxyHost= -Dhttps.proxyPort= and set your proxy hosts and ports
   * Run the application
+
 NOTE: If the option Run on Server is not in the menu, then right-click on the project -> Properties ->  Project Facets and make sure the Dynamic Web Module is checked and its version is 3.0.
  
 # Authors
