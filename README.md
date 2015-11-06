@@ -37,6 +37,7 @@ NOTE: If the option Run on Server is not in the menu, then right-click on the pr
       2. See all recipes stored in our database
       3. Search recipe by name
  ![options](https://cloud.githubusercontent.com/assets/7129907/10973038/6dff3c20-83e4-11e5-9a1f-ce7821e7d3c0.jpg)
+ * Enter data about the recipe which nutrient report you want to be calculated: recipe name, the amount for one serving, total amount and all products contained in the recipe. You can save the final result so that everyone who use the application can see it. ![new recipe](https://cloud.githubusercontent.com/assets/7129907/10973031/6dde839a-83e4-11e5-8981-fed8cff388ef.jpg)
  
  
 # Authors
