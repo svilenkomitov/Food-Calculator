@@ -22,7 +22,7 @@ Clone the repo, ``git clone https://github.com/svilenkomitov/Food-Calculator.git
 1. Running locally
   * Open Eclipse IDE
   * import as Maven project: File -> Import -> Existing Maven project
-  * create new Server: File -> New -> Other -> Server
+  * create new Server: File -> New -> Other -> Server -> SAP -> Java Web Tomcat 7 Server
   * double-click on the created server, open Users tab and create new user with the required properties. ![click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
   * double-click on the created server, choose the Connectivity tab and create new Destination named "report-destination" and ![properties](https://cloud.githubusercontent.com/assets/7129907/10996152/0d028088-848b-11e5-889c-ec93bca62c15.png) (get [API key](http://ndb.nal.usda.gov/ndb/doc/index#) -> click Sign up now –> fill the form)
   * double-click on the created server, choose the Connectivity tab and create new Destination named "search-destination" and ![properties](https://cloud.githubusercontent.com/assets/7129907/10996120/d518b2aa-848a-11e5-8a3d-d8deff31a0c2.png) (get [API key](http://ndb.nal.usda.gov/ndb/doc/index#) -> click Sign up now –> fill the form)
