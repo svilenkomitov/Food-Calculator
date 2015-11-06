@@ -3,9 +3,9 @@ Food calculator is web application that can be used to calculate the nutrition r
 
 For more information about the idea of the application read the blog: [link of the blog](https://www.google.bg/)
 #What we use
-  * SAP HANA Cloud Platform [identity service](https://help.hana.ondemand.com/help/frameset.htm?e637f62abb571014857cb0232adc43a7.html#loioe637f62abb571014857cb0232adc43a7) is used for user authentication 
-  * The amount of the recipe nutrients(calories, proteins, ...) is stored using SAP HANA Cloud Platform [persistence service](https://help.hana.ondemand.com/help/frameset.htm?e4aeacd2bb5710148ee99255136d96a5.html)
-  * Consuming [National Nutrition Database Service](http://ndb.nal.usda.gov/ndb/doc/index) using SAP HANA Cloud Platform [connectivity service](https://help.hana.ondemand.com/help/frameset.htm?e592cf6cbb57101495d3c28507d20f1b.html)
+  * SAP HANA Cloud Platform [identity service](https://help.hana.ondemand.com/help/frameset.htm?e637f62abb571014857cb0232adc43a7.html#loioe637f62abb571014857cb0232adc43a7) is used for user authentication.
+  * The amount of the recipe nutrients(calories, proteins, ...) is stored using SAP HANA Cloud Platform [persistence service](https://help.hana.ondemand.com/help/frameset.htm?e4aeacd2bb5710148ee99255136d96a5.html).
+  * Consuming [National Nutrition Database Service](http://ndb.nal.usda.gov/ndb/doc/index) using SAP HANA Cloud Platform [connectivity service](https://help.hana.ondemand.com/help/frameset.htm?e592cf6cbb57101495d3c28507d20f1b.html).
   * User Interface powered by [SAPUI5](https://sapui5.netweaver.ondemand.com/#docs/guide/99ac68a5b1c3416ab5c84c99fefa250d.html). The application is compatible with mobile devices.
   * The whole communication process is handled via [CXF](https://cxf.apache.org/) REST services.
 
