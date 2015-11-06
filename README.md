@@ -1,8 +1,7 @@
 # Food-Calculator
-Food calculator is web application that can be used to calculate the nutrition report of recipe based on products entered by the user.
+Food calculator is web application that can be used to calculate the nutrition report of a recipe based on basic products entered by the user.
 
-#
-
+For more information about the idea of the application read the blog: ![link of the blog]()
 #What we use
   * SAP HANA Cloud Platform [identity service](https://help.hana.ondemand.com/help/frameset.htm?e637f62abb571014857cb0232adc43a7.html#loioe637f62abb571014857cb0232adc43a7) is used for user authentication 
   * The amount of the recipe nutrients(calories, proteins, ...) is stored using SAP HANA Cloud Platform [persistence service](https://help.hana.ondemand.com/help/frameset.htm?e4aeacd2bb5710148ee99255136d96a5.html)
@@ -15,7 +14,7 @@ Food calculator is web application that can be used to calculate the nutrition r
   * [JDK 7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) or higher
   * [SAP HANA Cloud Platform Tools and SDK(Java Web Tomcat 7)](https://tools.hana.ondemand.com/#cloud)
   * [Set up SDK location](https://help.hana.ondemand.com/help/frameset.htm?7613f514711e1014839a8273b0e91070.html)
-  * Maven[download](https://maven.apache.org/)
+  * Maven [download](https://maven.apache.org/)
   
 # Application startup
 Clone the repo, ``git clone https://github.com/svilenkomitov/Food-Calculator.git``
