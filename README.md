@@ -1,4 +1,7 @@
 # Food-Calculator
+Food calculator is web application that can be used to calculate the nutrition report of recipe based on products entered by the user.
+
+#
 
 #What we use
   * SAP HANA Cloud Platform identity service is used for user authentication [sample](https://help.hana.ondemand.com/help/frameset.htm?e637f62abb571014857cb0232adc43a7.html#loioe637f62abb571014857cb0232adc43a7)
@@ -14,6 +17,7 @@
   * [Maven](https://maven.apache.org/)
   
 # Application startup
+Clone the repo, ``git clone https://github.com/svilenkomitov/Food-Calculator.git``
 1. Running locally
   * import as Maven project
   * create new local server
