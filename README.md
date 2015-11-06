@@ -18,6 +18,7 @@ Food calculator is web application that can be used to calculate the nutrition r
   
 # Application startup
 Clone the repo, ``git clone https://github.com/svilenkomitov/Food-Calculator.git``
+
 1. Running locally
   * import as Maven project
   * create new local server
