@@ -1,5 +1,5 @@
 # Food-Calculator
-Food calculator is web application that can be used to calculate the nutrition report of a recipe based on basic products entered by the user.
+Food calculator is web application that generates a nutrition report providing information about calories, proteins, carbohydrates and more nutritions for a particular recipe. This data is based on the user input for the ingredients used. 
 
 For more information about the idea behind the project you can check our blog: [link of the blog](https://www.google.bg/)
 #What we use
