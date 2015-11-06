@@ -26,7 +26,7 @@
 NOTE: If the option Run on Server is not in the menu, then right-click on the project -> Properties ->  Project Facets and make sure the Dynamic Web Module is checked and its version is 3.0.
  
 # Authors
-Tsvetislav Victorov - https://github.com/cviktorov
+Tsvetislav Viktorov - https://github.com/cviktorov
 
 Svilen Komitov - https://github.com/svilenkomitov
 
