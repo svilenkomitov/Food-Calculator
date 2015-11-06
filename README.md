@@ -31,7 +31,12 @@ Clone the repo, ``git clone https://github.com/svilenkomitov/Food-Calculator.git
 NOTE: If the option Run on Server is not in the menu, then right-click on the project -> Properties ->  Project Facets and make sure the Dynamic Web Module is checked and its version is 3.0.
  
 #Demo
- *Enter your credentials from server configuration. ![](https://cloud.githubusercontent.com/assets/7129907/10973033/6de23b52-83e4-11e5-9e56-13bc15ab8706.jpg)
+ * Enter your credentials from server configuration. ![](https://cloud.githubusercontent.com/assets/7129907/10973033/6de23b52-83e4-11e5-9e56-13bc15ab8706.jpg)
+ * You can choose between three options:
+      1. Enter information about your recipe and calculate its nutrition amount
+      2. See all recipes stored in our database
+      3. Search recipe by name
+ ![options](https://cloud.githubusercontent.com/assets/7129907/10973038/6dff3c20-83e4-11e5-9a1f-ce7821e7d3c0.jpg)
  
  
 # Authors
