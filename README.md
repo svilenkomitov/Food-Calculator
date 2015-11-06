@@ -11,6 +11,7 @@ Food calculator is web application that can be used to calculate the nutrition r
   * The whole communication process is handled via [CXF](https://cxf.apache.org/) REST services.
 
 # Prerequisites
+  * Eclipse IDE
   * JDK 7 or higher
   * [SAP HANA Cloud Platform Tools and SDK(Java Web Tomcat 7)](https://tools.hana.ondemand.com/#cloud)
   * [Set up SDK location](https://help.hana.ondemand.com/help/frameset.htm?7613f514711e1014839a8273b0e91070.html)
