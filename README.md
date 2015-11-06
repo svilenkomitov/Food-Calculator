@@ -11,11 +11,11 @@ Food calculator is web application that can be used to calculate the nutrition r
   * The whole communication process is handled via [CXF](https://cxf.apache.org/) REST services.
 
 # Prerequisites
-  * Eclipse IDE
-  * JDK 7 or higher
+  * Eclipse IDE for JavaEE developers [download](https://eclipse.org/downloads/)
+  * [JDK 7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) or higher
   * [SAP HANA Cloud Platform Tools and SDK(Java Web Tomcat 7)](https://tools.hana.ondemand.com/#cloud)
   * [Set up SDK location](https://help.hana.ondemand.com/help/frameset.htm?7613f514711e1014839a8273b0e91070.html)
-  * [Maven](https://maven.apache.org/)
+  * Maven[download](https://maven.apache.org/)
   
 # Application startup
 Clone the repo, ``git clone https://github.com/svilenkomitov/Food-Calculator.git``
