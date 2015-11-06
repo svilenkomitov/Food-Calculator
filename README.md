@@ -37,10 +37,10 @@ NOTE: If the option Run on Server is not in the menu, then right-click on the pr
       1. Enter information about your recipe and calculate its nutrition amount
       2. See all recipes stored in our database
       3. Search recipe by name
- ![options](https://cloud.githubusercontent.com/assets/7129907/10973038/6dff3c20-83e4-11e5-9a1f-ce7821e7d3c0.jpg)
- * In the fields provided you can enter data for the recipe: name, amount for one serving and all products contained in the recipe. Than by clicking the "Calculate" button you get a report about the nutrients quantity. You can save the final result so that everyone who uses the application can see it. ![new recipe](https://cloud.githubusercontent.com/assets/7129907/10973031/6dde839a-83e4-11e5-8981-fed8cff388ef.jpg)
- * Here you can see the whole nutrient information for the recipes stored in the database and delete it if you think it is not correct. ![all recipes](https://cloud.githubusercontent.com/assets/7129907/10973036/6de4fbf8-83e4-11e5-88ae-4c39a7a9729c.jpg)
- * The search option is to find recipes by name and see its nutrient information ![search](https://cloud.githubusercontent.com/assets/7129907/10973034/6de3b680-83e4-11e5-863a-d1c52407af7a.jpg)
+ ![options](https://cloud.githubusercontent.com/assets/7129907/10996387/2e7c70a0-848d-11e5-8969-ecfa0106a9f2.png)
+ * In the fields provided you can enter data for the recipe: name, amount for one serving and all products contained in the recipe. Than by clicking the "Calculate" button you get a report about the nutrients quantity. You can save the final result so that everyone who uses the application can see it. ![new recipe](https://cloud.githubusercontent.com/assets/7129907/10996389/2e7f554a-848d-11e5-8b5d-0424dbbab8f5.png)
+ * Here you can see the whole nutrient information for the recipes stored in the database and delete it if you think it is not correct. ![all recipes](https://cloud.githubusercontent.com/assets/7129907/10996388/2e7dd67a-848d-11e5-9972-dfc5c81229bb.png)
+ * The search option is to find recipes by name and see its nutrient information ![search](https://cloud.githubusercontent.com/assets/7129907/10996390/2e7f917c-848d-11e5-9b67-e2e6d9c1828e.png)
  
  
 # Authors
