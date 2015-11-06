@@ -20,9 +20,10 @@ For more information about the idea of the application read the blog: [link of t
 Clone the repo, ``git clone https://github.com/svilenkomitov/Food-Calculator.git``
 
 1. Running locally
-  * import as Maven project
-  * create new local server
-  * double-click on it, open Users tab and create new user with the required properties. ![click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
+  * Open Eclipse IDE
+  * import as Maven project: File -> Import -> Existing Maven project
+  * create new Server: File -> New -> Other -> Server
+  * double-click on the created server, open Users tab and create new user with the required properties. ![click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
   * double-click on the created server, choose the Connectivity tab and create new Destination named "report-destination" and ![properties](https://cloud.githubusercontent.com/assets/7129907/10973032/6ddfa900-83e4-11e5-9017-b508a0e1a7b5.jpg) (get [API key](http://ndb.nal.usda.gov/ndb/doc/index#) -> click Sign up now –> fill the form)
   * double-click on the created server, choose the Connectivity tab and create new Destination named "search-destination" and ![properties](https://cloud.githubusercontent.com/assets/7129907/10973035/6de53082-83e4-11e5-9c84-737d9ebf8736.jpg) (get [API key](http://ndb.nal.usda.gov/ndb/doc/index#) -> click Sign up now –> fill the form)
   * if you work behind a proxy server, then you should configure your proxy settings (host and port). Double click on the server, go to Overview tab and press the Open launch configuration. In the tab (x)= Arguments, VM Arguments copy this: -Dhttp.proxyHost= -Dhttp.proxyPort= -Dhttps.proxyHost= -Dhttps.proxyPort= and set your proxy hosts and ports
