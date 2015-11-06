@@ -10,7 +10,7 @@ For more information about the idea behind the project you can check our blog: [
   * The whole communication process is handled via [CXF](https://cxf.apache.org/) REST services.
 
 # Prerequisites
-  * Eclipse IDE for JavaEE developers [download](https://eclipse.org/downloads/)
+  * [Eclipse IDE for JavaEE developers](https://eclipse.org/downloads/)
   * [JDK 7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) or higher
   * [SAP HANA Cloud Platform Tools and SDK(Java Web Tomcat 7)](https://tools.hana.ondemand.com/#cloud)
   * [Set up SDK location](https://help.hana.ondemand.com/help/frameset.htm?7613f514711e1014839a8273b0e91070.html)
