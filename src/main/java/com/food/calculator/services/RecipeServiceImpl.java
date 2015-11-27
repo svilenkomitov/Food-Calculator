@@ -1,4 +1,4 @@
-package com.sap.food.calculator.services;
+package com.food.calculator.services;
 
 import java.util.List;
 
@@ -16,8 +16,8 @@ import javax.ws.rs.core.Response.Status;
 
 import org.slf4j.helpers.MessageFormatter;
 
-import com.sap.food.calculator.dao.RecipeDAO;
-import com.sap.food.calculator.model.Recipe;
+import com.food.calculator.dao.RecipeDAO;
+import com.food.calculator.model.Recipe;
 
 @Path("/recipe")
 public class RecipeServiceImpl implements RecipeService {

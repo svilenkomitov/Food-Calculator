@@ -1,10 +1,10 @@
-package com.sap.food.calculator.recipe;
+package com.food.calculator.recipe;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.sap.food.calculator.model.Unit;
+import com.food.calculator.model.Unit;
 
 
 public class ConverterTest {

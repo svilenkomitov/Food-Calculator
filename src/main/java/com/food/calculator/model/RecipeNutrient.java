@@ -1,4 +1,4 @@
-package com.sap.food.calculator.model;
+package com.food.calculator.model;
 
 import java.io.Serializable;
 import java.text.MessageFormat;

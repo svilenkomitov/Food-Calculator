@@ -1,4 +1,4 @@
-package com.sap.food.calculator.services.modules;
+package com.food.calculator.services.modules;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 @Singleton
 public class EntityManagerProvider {
 
-	private static final String APPLICATION_NAME = "com.sap.food.calculator";
+	private static final String APPLICATION_NAME = "com.food.calculator";
 	private static final String ERROR_DATA_SOURCE_INITIALIZATION_FAILED_MESSAGE = "Data source initialization failed.";
 	private static final String DATA_SOURCE = "java:comp/env/jdbc/DefaultDB";
 	private static final Logger LOGGER = LoggerFactory.getLogger(EntityManagerProvider.class);

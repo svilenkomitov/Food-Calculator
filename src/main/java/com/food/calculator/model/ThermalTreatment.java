@@ -1,4 +1,4 @@
-package com.sap.food.calculator.model;
+package com.food.calculator.model;
 
 import java.util.Hashtable;
 
@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.sap.food.calculator.utils.NutrientsEnumAPI;
+import com.food.calculator.utils.NutrientsEnumAPI;
 
 /**
  * Initialize thermal treatment type coefficients for nutrients

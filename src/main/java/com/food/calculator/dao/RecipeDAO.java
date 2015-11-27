@@ -1,4 +1,4 @@
-package com.sap.food.calculator.dao;
+package com.food.calculator.dao;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.helpers.MessageFormatter;
 
-import com.sap.food.calculator.model.Recipe;
-import com.sap.food.calculator.services.modules.EntityManagerProvider;
+import com.food.calculator.model.Recipe;
+import com.food.calculator.services.modules.EntityManagerProvider;
 
 @Singleton
 public class RecipeDAO {

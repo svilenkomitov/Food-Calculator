@@ -1,4 +1,4 @@
-package com.sap.food.calculator.recipe;
+package com.food.calculator.recipe;
 
 import java.text.MessageFormat;
 

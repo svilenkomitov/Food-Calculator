@@ -1,4 +1,4 @@
-package com.sap.food.calculator.services.modules;
+package com.food.calculator.services.modules;
 
 import java.security.Principal;
 
@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.sap.food.calculator.exceptions.AuthenticatedUserException;
-import com.sap.food.calculator.model.AuthenticatedUser;
+import com.food.calculator.exceptions.AuthenticatedUserException;
+import com.food.calculator.model.AuthenticatedUser;
 import com.sap.security.auth.login.LoginContextFactory;
 import com.sap.security.um.service.UserManagementAccessor;
 import com.sap.security.um.user.PersistenceException;

@@ -1,4 +1,4 @@
-package com.sap.food.calculator.services.app;
+package com.food.calculator.services.app;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -7,10 +7,10 @@ import javax.servlet.ServletException;
 import javax.ws.rs.core.Application;
 
 import com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider;
-import com.sap.food.calculator.services.AuthenticatedUserService;
-import com.sap.food.calculator.services.NewRecipeService;
-import com.sap.food.calculator.services.ProductService;
-import com.sap.food.calculator.services.RecipeServiceImpl;
+import com.food.calculator.services.AuthenticatedUserService;
+import com.food.calculator.services.NewRecipeService;
+import com.food.calculator.services.ProductService;
+import com.food.calculator.services.RecipeServiceImpl;
 
 /**
  * Group all services in one application

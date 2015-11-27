@@ -1,4 +1,4 @@
-package com.sap.food.calculator.dao;
+package com.food.calculator.dao;
 
 import javax.inject.Singleton;
 import javax.persistence.EntityManager;
@@ -7,8 +7,8 @@ import javax.persistence.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.sap.food.calculator.cache.model.Product;
-import com.sap.food.calculator.services.modules.EntityManagerProvider;
+import com.food.calculator.cache.model.Product;
+import com.food.calculator.services.modules.EntityManagerProvider;
 
 @Singleton
 public class ProductDAO {

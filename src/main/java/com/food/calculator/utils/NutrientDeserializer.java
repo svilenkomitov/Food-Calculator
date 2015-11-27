@@ -1,4 +1,4 @@
-package com.sap.food.calculator.utils;
+package com.food.calculator.utils;
 
 import java.lang.reflect.Type;
 import java.text.MessageFormat;
@@ -11,10 +11,10 @@ import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
-import com.sap.food.calculator.cache.model.ProductNutrientTable;
-import com.sap.food.calculator.model.Nutrient;
-import com.sap.food.calculator.model.Unit;
-import com.sap.food.calculator.recipe.Converter;
+import com.food.calculator.cache.model.ProductNutrientTable;
+import com.food.calculator.model.Nutrient;
+import com.food.calculator.model.Unit;
+import com.food.calculator.recipe.Converter;
 
 public class NutrientDeserializer implements JsonDeserializer<ProductNutrientTable> {
 

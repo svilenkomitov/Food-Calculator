@@ -1,4 +1,4 @@
-package com.sap.food.calculator.ndb.model;
+package com.food.calculator.ndb.model;
 
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -6,9 +6,9 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.sap.food.calculator.cache.model.Product;
-import com.sap.food.calculator.model.ThermalTreatment;
-import com.sap.food.calculator.model.Unit;
+import com.food.calculator.cache.model.Product;
+import com.food.calculator.model.ThermalTreatment;
+import com.food.calculator.model.Unit;
 
 /**
  * Recipe used for calculating final Recipe report

@@ -1,4 +1,4 @@
-package com.sap.food.calculator.cache.model;
+package com.food.calculator.cache.model;
 
 import java.io.Serializable;
 import java.text.MessageFormat;
@@ -20,7 +20,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.sap.food.calculator.model.Unit;
+import com.food.calculator.model.Unit;
 
 /**
  * Product used in the cache

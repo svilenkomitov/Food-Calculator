@@ -1,4 +1,4 @@
-package com.sap.food.calculator.utils;
+package com.food.calculator.utils;
 
 import static org.junit.Assert.assertEquals;
 

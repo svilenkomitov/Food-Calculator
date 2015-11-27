@@ -1,4 +1,4 @@
-package com.sap.food.calculator.services;
+package com.food.calculator.services;
 
 import java.util.List;
 
@@ -11,8 +11,10 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import com.sap.food.calculator.ndb.model.Product;
-import com.sap.food.calculator.services.modules.ProductManager;
+
+import com.food.calculator.ndb.model.Product;
+import com.food.calculator.services.modules.ProductManager;
+
 
 @Path("/products")
 public class ProductService {

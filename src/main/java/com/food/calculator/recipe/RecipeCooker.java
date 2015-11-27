@@ -1,18 +1,18 @@
-package com.sap.food.calculator.recipe;
+package com.food.calculator.recipe;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 
-import com.sap.food.calculator.cache.model.Product;
-import com.sap.food.calculator.cache.model.ProductNutrientTable;
-import com.sap.food.calculator.model.Recipe;
-import com.sap.food.calculator.model.RecipeNutrient;
-import com.sap.food.calculator.model.ThermalTreatment;
-import com.sap.food.calculator.model.Unit;
-import com.sap.food.calculator.ndb.model.RecipeContent;
-import com.sap.food.calculator.utils.NutrientsEnumAPI;
+import com.food.calculator.cache.model.Product;
+import com.food.calculator.cache.model.ProductNutrientTable;
+import com.food.calculator.model.Recipe;
+import com.food.calculator.model.RecipeNutrient;
+import com.food.calculator.model.ThermalTreatment;
+import com.food.calculator.model.Unit;
+import com.food.calculator.ndb.model.RecipeContent;
+import com.food.calculator.utils.NutrientsEnumAPI;
 
 /**
  * Used to calculate the recipe's nutrients from its products.
@@ -198,7 +198,7 @@ public class RecipeCooker {
 			Double portions) {
 		Double portionValueConverted = (portions > 0.0) ? valueNutrient / portions : 0.0;
 		return new RecipeNutrient(
-				new com.sap.food.calculator.model.Nutrient(nutrientEnum.name(), fromStringToUnitEnum(unit)),
+				new com.food.calculator.model.Nutrient(nutrientEnum.name(), fromStringToUnitEnum(unit)),
 				Double.parseDouble(decimalFormat.format(portionValueConverted)));
 
 	}

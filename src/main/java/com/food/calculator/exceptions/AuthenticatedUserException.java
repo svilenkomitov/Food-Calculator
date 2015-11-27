@@ -1,4 +1,4 @@
-package com.sap.food.calculator.exceptions;
+package com.food.calculator.exceptions;
 
 /**
  * Thrown when fails to get user credentials.

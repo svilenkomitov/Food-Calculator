@@ -1,4 +1,4 @@
-package com.sap.food.calculator.ndb.model;
+package com.food.calculator.ndb.model;
 
 import java.io.Serializable;
 

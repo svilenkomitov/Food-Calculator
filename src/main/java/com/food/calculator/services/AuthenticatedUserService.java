@@ -1,4 +1,4 @@
-package com.sap.food.calculator.services;
+package com.food.calculator.services;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.GET;
@@ -9,9 +9,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import com.sap.food.calculator.exceptions.AuthenticatedUserException;
-import com.sap.food.calculator.model.AuthenticatedUser;
-import com.sap.food.calculator.services.modules.AuthenticatedUserManager;
+import com.food.calculator.exceptions.AuthenticatedUserException;
+import com.food.calculator.model.AuthenticatedUser;
+import com.food.calculator.services.modules.AuthenticatedUserManager;
 
 @Path("/user")
 public class AuthenticatedUserService {

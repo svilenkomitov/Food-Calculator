@@ -1,6 +1,6 @@
-package com.sap.food.calculator.recipe;
+package com.food.calculator.recipe;
 
-import com.sap.food.calculator.model.Unit;
+import com.food.calculator.model.Unit;
 
 public class Converter {
 

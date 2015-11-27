@@ -1,4 +1,4 @@
-package com.sap.food.calculator.services.modules;
+package com.food.calculator.services.modules;
 
 import java.io.IOException;
 import java.net.URL;
@@ -15,16 +15,16 @@ import org.apache.http.message.BasicNameValuePair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.food.calculator.cache.model.Product;
+import com.food.calculator.cache.model.ProductNutrientTable;
+import com.food.calculator.dao.ProductDAO;
+import com.food.calculator.ndb.model.RecipeContent;
+import com.food.calculator.utils.HTTPUtils;
+import com.food.calculator.utils.NutrientDeserializer;
+import com.food.calculator.utils.NutrientsEnumAPI;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
-import com.sap.food.calculator.cache.model.Product;
-import com.sap.food.calculator.cache.model.ProductNutrientTable;
-import com.sap.food.calculator.dao.ProductDAO;
-import com.sap.food.calculator.ndb.model.RecipeContent;
-import com.sap.food.calculator.utils.HTTPUtils;
-import com.sap.food.calculator.utils.NutrientDeserializer;
-import com.sap.food.calculator.utils.NutrientsEnumAPI;
 
 public class RecipeNutrientData {
 

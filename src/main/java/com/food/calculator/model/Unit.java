@@ -1,4 +1,4 @@
-package com.sap.food.calculator.model;
+package com.food.calculator.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonFormat;

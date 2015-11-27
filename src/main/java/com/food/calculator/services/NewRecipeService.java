@@ -1,4 +1,4 @@
-package com.sap.food.calculator.services;
+package com.food.calculator.services;
 
 import java.text.ParseException;
 
@@ -9,10 +9,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.sap.food.calculator.model.Recipe;
-import com.sap.food.calculator.ndb.model.RecipeContent;
-import com.sap.food.calculator.recipe.RecipeCooker;
-import com.sap.food.calculator.services.modules.RecipeNutrientData;
+import com.food.calculator.model.Recipe;
+import com.food.calculator.ndb.model.RecipeContent;
+import com.food.calculator.recipe.RecipeCooker;
+import com.food.calculator.services.modules.RecipeNutrientData;
 
 @Path(NewRecipeService.NEW_RECIPE)
 public class NewRecipeService {

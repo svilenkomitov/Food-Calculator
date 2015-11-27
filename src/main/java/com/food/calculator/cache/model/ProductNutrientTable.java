@@ -1,4 +1,4 @@
-package com.sap.food.calculator.cache.model;
+package com.food.calculator.cache.model;
 
 import java.text.MessageFormat;
 
@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.sap.food.calculator.model.Nutrient;
+import com.food.calculator.model.Nutrient;
 
 /**
  * Table for connection between nutrient and product

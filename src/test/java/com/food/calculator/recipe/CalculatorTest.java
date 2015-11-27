@@ -1,21 +1,20 @@
-package com.sap.food.calculator.recipe;
+package com.food.calculator.recipe;
 
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.junit.Test;
 
-import com.sap.food.calculator.cache.model.Product;
-import com.sap.food.calculator.cache.model.ProductNutrientTable;
-import com.sap.food.calculator.model.Nutrient;
-import com.sap.food.calculator.model.Recipe;
-import com.sap.food.calculator.model.RecipeNutrient;
-import com.sap.food.calculator.model.ThermalTreatment;
-import com.sap.food.calculator.model.Unit;
-import com.sap.food.calculator.ndb.model.RecipeContent;
-import com.sap.food.calculator.utils.NutrientsEnumAPI;
+import com.food.calculator.cache.model.Product;
+import com.food.calculator.cache.model.ProductNutrientTable;
+import com.food.calculator.model.Nutrient;
+import com.food.calculator.model.Recipe;
+import com.food.calculator.model.RecipeNutrient;
+import com.food.calculator.model.ThermalTreatment;
+import com.food.calculator.model.Unit;
+import com.food.calculator.ndb.model.RecipeContent;
+import com.food.calculator.utils.NutrientsEnumAPI;
 
 public class CalculatorTest {
 

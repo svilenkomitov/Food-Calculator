@@ -1,4 +1,4 @@
-package com.sap.food.calculator.utils;
+package com.food.calculator.utils;
 
 /**
  * Holds National Nutrition Database IDs for all nutrients used.

@@ -1,4 +1,4 @@
-package com.sap.food.calculator.services.modules;
+package com.food.calculator.services.modules;
 
 import java.io.IOException;
 import java.net.URL;
@@ -14,8 +14,9 @@ import com.google.gson.Gson;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
-import com.sap.food.calculator.ndb.model.Product;
-import com.sap.food.calculator.utils.HTTPUtils;
+
+import com.food.calculator.ndb.model.Product;
+import com.food.calculator.utils.HTTPUtils;
 
 /**
  * Extract data for products from National Nutrition Database API.
