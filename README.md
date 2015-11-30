@@ -34,21 +34,22 @@ These are the main components of the application:
 
 # How can you run the Food Calculator Application?
 To run the application locally you need to: 
-    1.	Download the Food Calculator Application from [here](https://github.com/svilenkomitov/Food-Calculator).
-       The application is licensed under the Apache License, Version 2.0.
-    2.	Import the project as an existing Maven project.
-       Open the Eclipse IDE. Choose File → Import →Existing Maven Projects. Choose Next.
-       In the Root Directory field, browse to select the root folder. In the Projects field select the checkbox with the Food        Calculator Application project. Choose Finish.
-    3.	Create new Java Web Tomcat 7 Server.
-       1)	In the Servers view, double-click on the Java Web Tomcat 7 Server. Open the Users tab and create new user with the           required properties.  
-          ![click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
-       2)	Get an API key from this site: http://ndb.nal.usda.gov/ndb/doc/index. In the Gaining Access section, choose Sign up           now, fill in the form and copy the generated key.
-       3)	Open the Connectivity tab and create a new destination called report-destination. 
-          In the URL field, enter http://api.nal.usda.gov.
-          Set these additional properties:
+1.	Download the Food Calculator Application from [here](https://github.com/svilenkomitov/Food-Calculator).
+    The application is licensed under the Apache License, Version 2.0.
+2.	Import the project as an existing Maven project.
+    Open the Eclipse IDE. Choose File → Import →Existing Maven Projects. Choose Next.
+    In the Root Directory field, browse to select the root folder. In the Projects field select the checkbox with the Food       Calculator Application project. Choose Finish.
+3.	Create new Java Web Tomcat 7 Server.
+
+    1)	In the Servers view, double-click on the Java Web Tomcat 7 Server. Open the Users tab and create new user with the           required properties.  
+        ![click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
+    2)	Get an API key from this site: http://ndb.nal.usda.gov/ndb/doc/index. In the Gaining Access section, choose Sign up          now, fill in the form and copy the generated key.
+    3)	Open the Connectivity tab and create a new destination called report-destination. 
+        In the URL field, enter http://api.nal.usda.gov.
+        Set these additional properties:
 
 |Name	| Value|
-|-------------|-------------|
+|------------------------------------------------------------|------------------------------------------------------------|
 |api_key |	<generated_api_key>|
 |format	| json|
 |path	| /ndb/nutrients/|
