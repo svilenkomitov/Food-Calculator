@@ -79,8 +79,8 @@ To run the application locally you need to:
   </tbody>
 </table>
 |Name                                           |                                                     Value  |
-|:---------------------------------------------:|:----------------------------------------------------------:|
-|                 :api_key:                     |                                        <generated_api_key>  |
+|                :--------------:               |:----------------------------------------------------------:|
+|                   api_key                     |                                        <generated_api_key>  |
 |format	                                        |                                                       json |
 |path	                                        |                                            /ndb/nutrients/ |
 |ProxyType	                                    |                                                   Internet |
