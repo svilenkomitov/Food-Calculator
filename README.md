@@ -53,7 +53,7 @@ To run the application locally you need to:
  table th, table td { overflow: hidden; }
 </style>
 
-<table class="span12">
+<table class="span12" width="400">
   <thead>
     <tr>
       <th style="width: 50%">Name</th>
@@ -62,11 +62,24 @@ To run the application locally you need to:
   </thead>
   <tbody>
     <tr>
-      <td>Val 1</th>
-      <td>Val 2</th>
-      <td>Val 3</th>
-      <td>Val 4</th>
-      <td>Val 5</th>
+      <td>api_key</th>
+      <td><generated_api_key></th>
+    </tr>
+    <tr>
+      <td>format</th>
+      <td>json</th>
+    </tr>
+    <tr>
+      <td>path</th>
+      <td>/ndb/nutrients/</th>
+    </tr>
+    <tr>
+      <td>ProxyType</th>
+      <td>Internet</th>
+    </tr>
+    <tr>
+      <td>scheme</th>
+      <td>http</th>
     </tr>
   </tbody>
 </table>
