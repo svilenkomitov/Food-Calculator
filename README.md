@@ -48,13 +48,13 @@ To run the application locally you need to:
     In the URL field, enter http://api.nal.usda.gov.
     Set these additional properties:
 
-|------------------------------Name------------------------------|------------------------------Value------------------------------|
-|:--------------:              |:----------------------------------------------------------:|
-|                   api_key                     |                                        <generated_api_key>  |
-|format	                                        |                                                       json |
-|path	                                        |                                            /ndb/nutrients/ |
-|ProxyType	                                    |                                                   Internet |
-|scheme	                                        |                                                       http |
+|-------------------------Name-------------------------|-------------------------Value-------------------------|
+|::|::|
+|api_key|generated_api_key|
+|format|json|
+|path|/ndb/nutrients/|
+|ProxyType|Internet|
+|scheme|http|
 
 
 Note: For the api_key name, you can use the value DEMO_KEY, instead of your generated key. There is a difference though. If you use the DEMO_KEY value, you will have access restrictions.
