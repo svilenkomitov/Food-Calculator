@@ -38,7 +38,7 @@ To run the application locally you need to:
 1. Download the Food Calculator Application from [here](https://github.com/svilenkomitov/Food-Calculator).
     The application is licensed under the Apache License, Version 2.0.
 2. Import the project as an existing Maven project.
-    Open the Eclipse IDE. Choose File → Import →Existing Maven Projects. Choose Next.
+    Open the Eclipse IDE. Choose *File → Import →Existing Maven Projects*. Choose *Next*.
     In the Root Directory field, browse to select the root folder. In the Projects field select the checkbox with the Food       Calculator Application project. Choose Finish.
 3. Create new Java Web Tomcat 7 Server.
 
@@ -113,7 +113,7 @@ Tsvetislav Viktorov - https://github.com/cviktorov
 Svilen Komitov - https://github.com/svilenkomitov
 
 # Copyright and license
-    Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this work except in compliance with the License. You may obtain a copy of the License in the LICENSE file, or at:
 
 http://www.apache.org/licenses/LICENSE-2.0
 
