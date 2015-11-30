@@ -48,15 +48,10 @@ To run the application locally you need to:
     In the URL field, enter http://api.nal.usda.gov.
     Set these additional properties:
 
-|   	|   	|
-|:-:	|:-:	|
-| api_key   	| generated_api_key  	|
-|   	|   	|
-|   	|   	|
-|   	|   	|
+
 |Name|Value|
 |:------------:|:------------:|
-|        api_key         |generated_api_key|
+|api_key|generated_api_key|
 |format|json|
 |path|/ndb/nutrients/|
 |ProxyType|Internet|
@@ -70,13 +65,13 @@ Note: For the api_key name, you can use the value DEMO_KEY, instead of your gene
     In the URL field, enter http://api.nal.usda.gov.
     Set these additional properties:
 
-|Name	| Value:space_after_headers|
-|-----------|------------|
-|api_key	| <generated_api_key>|
-|format	| json|
-|path	| /ndb/search/|
-|ProxyType	| Internet|
-|scheme	| http|
+|Name|Value|
+|:-----------:|:------------:|
+|api_key|generated_api_key|
+|format|json|
+|path|/ndb/search/|
+|ProxyType|Internet|
+|scheme|http|
 
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996120/d518b2aa-848a-11e5-8a3d-d8deff31a0c2.png)
 
