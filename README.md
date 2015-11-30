@@ -83,6 +83,7 @@ NOTE: If the option *Run on Server* is missing, then right-click on the project 
 1. Open the application URL. It looks like this: ```http://<host>:<port>/com.food.calculator```
 2. Enter the username and password you specified in the server configuration.
 ![](https://cloud.githubusercontent.com/assets/7129907/10973033/6de23b52-83e4-11e5-9e56-13bc15ab8706.jpg)
+
 3. You can choose between these options:
 *	Enter some information about your recipe.
 *	List all recipes from the database.
@@ -91,8 +92,10 @@ NOTE: If the option *Run on Server* is missing, then right-click on the project 
 
 4. Choose the *New Recipe* tile. Add the ingredients of the recipe. Later on you will get a nutrient report based on the ingredients you specified. Save all the recipe settings. All other users of the application will be able to read your recipe.
 ![salad1](https://cloud.githubusercontent.com/assets/3735031/11435676/beb6ec8c-94e5-11e5-901e-b89328d7d443.jpg)
+
 5. Choose the *Recipes* tile to list all the recipes and their nutrients reports. 
 ![salad2](https://cloud.githubusercontent.com/assets/3735031/11435678/beb82fde-94e5-11e5-93ee-0f6d7cf06bd8.jpg)
+
 6. Choose the *Search* tile to find a recipe by name. In this way you obtain the nutrient report of this recipe.
 ![salad3](https://cloud.githubusercontent.com/assets/3735031/11435677/beb7370a-94e5-11e5-8657-7ebc20eeb548.jpg)
 
