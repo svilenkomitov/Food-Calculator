@@ -84,8 +84,8 @@ NOTE: If the option *Run on Server* is missing, then right-click on the project 
 2. Enter the username and password you specified in the server configuration.
 ![](https://cloud.githubusercontent.com/assets/7129907/10973033/6de23b52-83e4-11e5-9e56-13bc15ab8706.jpg)
 3. You can choose between these options:
-*	Enter some information about your recipe;
-*	List all recipes from the database;
+*	Enter some information about your recipe.
+*	List all recipes from the database.
 *   Search a recipe by name.
 ![options](https://cloud.githubusercontent.com/assets/7129907/10996387/2e7c70a0-848d-11e5-8969-ecfa0106a9f2.png)
 
