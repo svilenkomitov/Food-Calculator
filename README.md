@@ -78,6 +78,7 @@ To run the application locally you need to:
     </tr>
   </tbody>
 </table>
+<center>
 |Name                                           |                                                     Value  |
 |                :--------------:               |:----------------------------------------------------------:|
 |                   api_key                     |                                        <generated_api_key>  |
@@ -85,6 +86,7 @@ To run the application locally you need to:
 |path	                                        |                                            /ndb/nutrients/ |
 |ProxyType	                                    |                                                   Internet |
 |scheme	                                        |                                                       http |
+</center>
 
 Note: For the api_key name, you can use the value DEMO_KEY, instead of your generated key. There is a difference though. If you use the DEMO_KEY value, you will have access restrictions.
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996152/0d028088-848b-11e5-889c-ec93bca62c15.png)
