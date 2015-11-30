@@ -15,20 +15,15 @@ The recipe nutrition information is saved in the database and this data is provi
 These are the use cases that the Food Calculator Application is intended for:
 
 •	In restaurants. The menus of the restaurants can include a nutrients report for every meal they offer without listing the whole recipes. In this way customers that use special diets can choose an appropriate meal based on these reports.
-
 •	At home. Anyone who prepared meals at home can take advantage of this application.
 
 # What is included in the application implementation?
 These are the main components of the application:
 
 •	[Identity service](https://help.hana.ondemand.com/cloud_identity/frameset.htm) for authentication.
-
 •	[Persistence Service](https://help.hana.ondemand.com/help/frameset.htm?e7b3c275bb571014a910b3fb4329cf09.html) for the recipe nutrient report.
-
 •	[Connectivity service](https://help.hana.ondemand.com/help/frameset.htm?e54cc8fbbb571014beb5caaf6aa31280.html) to set destinations for  [National Nutrition Database API](http://ndb.nal.usda.gov/ndb/doc/index)
-
 •	[SAPUI5](https://sapui5.netweaver.ondemand.com/#docs/guide/99ac68a5b1c3416ab5c84c99fefa250d.html) for the user interface.  The application is compatible with mobile devices.
-
 •	REST services for the whole communication.
 
 # What tools do you need to run the application?
