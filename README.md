@@ -5,17 +5,26 @@ For more information about the idea behind the project you can check our blog: [
 
 # What do existing solutions offer?
 With the existing applications that enable tracking the food you eat, you either can’t create new recipes, or it’s very difficult to do that due to differences in measurement units. Or if such an application is user-friendly, it is not free. 
-The measurement units depend on the product condition. And, it is hard to calculate the nutrients of a single meal portion. 
+The measurement units depend on the product condition. And, it is hard to calculate the nutrients of a single meal portion 
 
 
+
++-------+----------+------+
 | Table Headings   | Here |
++-------+----------+------+
 | Sub   | Headings | Too  |
++=======+==========+======+
 | cell  | column spanning |
++ spans +----------+------+
 | rows  | normal   | cell |
++-------+----------+------+
 | multi | * cells can be  |
 | line  | * formatted     |
 | cells | * paragraphs    |
 | too   |                 |
++-------+-----------------+
+
+
 # What are the advantages of the Food Calculator Application?
 This is where Food Calculator Application comes to help. It is designed to calculate the amount of nutrients in a recipe. The information about these nutrients is based on the basic products extracted from National Nutrient Database API. This database provides the amount of nutrients for a basic product. The application uses this database because it is supported by the United States Department of Agriculture and this is a guarantee that the data is reliable and its content is updated each year. Another reason to choose this database is the detailed nutrient information on over 8,000 generic and proprietary-branded types of food. 
 The recipe nutrition information is saved in the database and this data is provided in a structured way to consumers.
