@@ -61,8 +61,6 @@ To run the application locally you need to:
 
 Note: For the api_key name, you can use the value DEMO_KEY, instead of your generated key. There is a difference though.     If you use the DEMO_KEY value, you will have access restrictions.
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996152/0d028088-848b-11e5-889c-ec93bca62c15.png)
-
-
     3.4	Open the Connectivity tab and create a new destination called search-destination. 
         In the URL field, enter http://api.nal.usda.gov.
         Set these additional properties:
@@ -76,8 +74,6 @@ Note: For the api_key name, you can use the value DEMO_KEY, instead of your gene
 |scheme|http| 
 
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996120/d518b2aa-848a-11e5-8a3d-d8deff31a0c2.png)
-
-
     3.5	Run the application on Java Web Tomcat 7 Server
         Right-click on the com.food.calculator project and choose Run As → Run on Server. Select the Manually define a new           server option and then choose SAP → Java Web Tomcat 7 Server. Choose Finish.
 
