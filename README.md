@@ -48,9 +48,9 @@ To run the application locally you need to:
     In the URL field, enter http://api.nal.usda.gov.
     Set these additional properties:
 
-|-------------------------Name-------------------------|-------------------------Value-------------------------|
-|:-:|:-:|
-|api_key|generated_api_key|
+|Name|-------------------------Value-------------------------|
+|-:-:-|-:-:-|
+|        api_key         |generated_api_key|
 |format|json|
 |path|/ndb/nutrients/|
 |ProxyType|Internet|
