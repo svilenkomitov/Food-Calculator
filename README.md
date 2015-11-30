@@ -41,12 +41,12 @@ To run the application locally you need to:
     In the Root Directory field, browse to select the root folder. In the Projects field select the checkbox with the Food       Calculator Application project. Choose Finish.
 3.	Create new Java Web Tomcat 7 Server.
 
-    1)	In the Servers view, double-click on the Java Web Tomcat 7 Server. Open the Users tab and create new user with the           required properties.  
-        ![click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
-    2)	Get an API key from this site: http://ndb.nal.usda.gov/ndb/doc/index. In the Gaining Access section, choose Sign up          now, fill in the form and copy the generated key.
-    3)	Open the Connectivity tab and create a new destination called report-destination. 
-        In the URL field, enter http://api.nal.usda.gov.
-        Set these additional properties:
+1)	In the Servers view, double-click on the Java Web Tomcat 7 Server. Open the Users tab and create new user with the           required properties.  
+    ![click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
+2)	Get an API key from this site: http://ndb.nal.usda.gov/ndb/doc/index. In the Gaining Access section, choose Sign up          now, fill in the form and copy the generated key.
+3)	Open the Connectivity tab and create a new destination called report-destination. 
+    In the URL field, enter http://api.nal.usda.gov.
+    Set these additional properties:
 
 |Name                                           |                                                     Value  |
 |:---------------------------------------------:|:----------------------------------------------------------:|
@@ -56,21 +56,12 @@ To run the application locally you need to:
 |ProxyType	                                    |                                                   Internet |
 |scheme	                                        |                                                       http |
 
-<style>
-table:nth-of-type(1) {
-    display:table;
-    width:300%;
-}
-table:nth-of-type(1) th:nth-of-type(2) {
-    width:150%;
-}
-</style>
 Note: For the api_key name, you can use the value DEMO_KEY, instead of your generated key. There is a difference though. If you use the DEMO_KEY value, you will have access restrictions.
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996152/0d028088-848b-11e5-889c-ec93bca62c15.png)
 
-       4)	Open the Connectivity tab and create a new destination called search-destination. 
-          In the URL field, enter http://api.nal.usda.gov.
-          Set these additional properties:
+4)	Open the Connectivity tab and create a new destination called search-destination. 
+    In the URL field, enter http://api.nal.usda.gov.
+    Set these additional properties:
 
 |Name	| Value|
 |-----------|------------|
@@ -82,10 +73,10 @@ Note: For the api_key name, you can use the value DEMO_KEY, instead of your gene
 
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996120/d518b2aa-848a-11e5-8a3d-d8deff31a0c2.png)
 
-    4.	Run the application on Java Web Tomcat 7 Server
-       Right-click on the com.food.calculator project and choose Run As → Run on Server. Select the Manually define a new           server option and then choose SAP → Java Web Tomcat 7 Server. Choose Finish.
+4.	Run the application on Java Web Tomcat 7 Server
+    Right-click on the com.food.calculator project and choose Run As → Run on Server. Select the Manually define a new           server option and then choose SAP → Java Web Tomcat 7 Server. Choose Finish.
 
-       NOTE: If the option Run on Server is missing, then right-click on the project and choose Properties → Project Facets         and make sure the Dynamic Web Module checkbox is selected and its version is 3.0.
+    NOTE: If the option Run on Server is missing, then right-click on the project and choose Properties → Project Facets         and make sure the Dynamic Web Module checkbox is selected and its version is 3.0.
 
 # Try out the Food Calculator Application.
 1)	Open the application URL. It looks like this: http://<host>:<port>/com.food.calculator
@@ -93,9 +84,9 @@ Note: For the api_key name, you can use the value DEMO_KEY, instead of your gene
 ![](https://cloud.githubusercontent.com/assets/7129907/10973033/6de23b52-83e4-11e5-9e56-13bc15ab8706.jpg)
 
 3)	You can choose between these options:
-o	Enter some information about your recipe;
-o	List all recipes from the database;
-o Search a recipe by name.
+*	Enter some information about your recipe;
+*	List all recipes from the database;
+* Search a recipe by name.
 ![options](https://cloud.githubusercontent.com/assets/7129907/10996387/2e7c70a0-848d-11e5-8969-ecfa0106a9f2.png)
 
 4)	Choose the New Recipe tile. Add the ingredients of the recipe. Later on you will get a nutrient report based on the ingredients you specified. Save all the recipe settings. All other users of the application will be able to read your recipe.
@@ -103,8 +94,10 @@ o Search a recipe by name.
 
 5)	Choose the Recipes tile to list all the recipes and their nutrients reports. 
 ![salad2](https://cloud.githubusercontent.com/assets/3735031/11435678/beb82fde-94e5-11e5-93ee-0f6d7cf06bd8.jpg)
+
 6)	Choose the Search tile to find a recipe by name. In this way you obtain the nutrient report of this recipe.
 ![salad3](https://cloud.githubusercontent.com/assets/3735031/11435677/beb7370a-94e5-11e5-8657-7ebc20eeb548.jpg)
+
 # What is more?
 With the current release of the application, you can use it not only locally but also on the SAP HANA Cloud Platform. You can take the source code of the application, build it and deploy it on the SAP HANA Cloud Platform. 
 
