@@ -74,7 +74,7 @@ Note: For the api_key name, you can use the value DEMO_KEY, instead of your gene
 |scheme|http| 
 
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996120/d518b2aa-848a-11e5-8a3d-d8deff31a0c2.png)
-    *   Run the application on Java Web Tomcat 7 Server
+*   Run the application on Java Web Tomcat 7 Server
     Right-click on the com.food.calculator project and choose Run As → Run on Server. Select the Manually define a new           server option and then choose SAP → Java Web Tomcat 7 Server. Choose Finish.
 
 NOTE: If the option Run on Server is missing, then right-click on the project and choose Properties → Project Facets         and make sure the Dynamic Web Module checkbox is selected and its version is 3.0.
@@ -86,7 +86,7 @@ NOTE: If the option Run on Server is missing, then right-click on the project an
 ![](https://cloud.githubusercontent.com/assets/7129907/10973033/6de23b52-83e4-11e5-9e56-13bc15ab8706.jpg)
 
 3. You can choose between these options:
-*	Enter some information about your recipe;
+    3.1 	Enter some information about your recipe;
 *	List all recipes from the database;
 *   Search a recipe by name.
 
