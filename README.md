@@ -59,10 +59,10 @@ To run the application locally you need to:
 <style>
 table:nth-of-type(1) {
     display:table;
-    width:100%;
+    width:300%;
 }
 table:nth-of-type(1) th:nth-of-type(2) {
-    width:50%;
+    width:150%;
 }
 </style>
 Note: For the api_key name, you can use the value DEMO_KEY, instead of your generated key. There is a difference though. If you use the DEMO_KEY value, you will have access restrictions.
