@@ -39,14 +39,14 @@ To run the application locally you need to:
     The application is licensed under the Apache License, Version 2.0.
 2. Import the project as an existing Maven project.
     Open the Eclipse IDE. Choose *File → Import →Existing Maven Projects*. Choose *Next*.
-    In the Root Directory field, browse to select the root folder. In the Projects field select the checkbox with the Food       Calculator Application project. Choose Finish.
+    In the *Root Directory* field, browse to select the root folder. In the *Projects* field select the checkbox with the Food Calculator Application project. Choose *Finish*.
 3. Create new Java Web Tomcat 7 Server.
 
-*   In the Servers view, double-click on the Java Web Tomcat 7 Server. Open the Users tab and create new user with the           required properties. 
+*   In the *Servers* view, double-click on the Java Web Tomcat 7 Server. Open the *Users* tab and create new user with the           required properties. 
     ![click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
-*   Get an API key from this site: http://ndb.nal.usda.gov/ndb/doc/index. In the Gaining Access section, choose Sign up          now, fill in the form and copy the generated key.
-*   Open the Connectivity tab and create a new destination called report-destination. 
-    In the URL field, enter http://api.nal.usda.gov.
+*   Get an API key from this site: http://ndb.nal.usda.gov/ndb/doc/index. In the *Gaining Access* section, choose *Sign up          now*, fill in the form and copy the generated key.
+*   Open the *Connectivity* tab and create a new destination called **report-destination**. 
+    In the *URL* field, enter **http://api.nal.usda.gov**.
     Set these additional properties:
 
 
@@ -59,10 +59,10 @@ To run the application locally you need to:
 |scheme|http|
 
 
-Note: For the api_key name, you can use the value DEMO_KEY, instead of your generated key. There is a difference though.     If you use the DEMO_KEY value, you will have access restrictions.
+**NOTE**: For the *api_key* name, you can use the value **DEMO_KEY**, instead of your generated key. There is a difference though. If you use the **DEMO_KEY** value, you will have access restrictions.
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996152/0d028088-848b-11e5-889c-ec93bca62c15.png)
-*   Open the Connectivity tab and create a new destination called search-destination. 
-    In the URL field, enter http://api.nal.usda.gov.
+*   Open the *Connectivity* tab and create a new destination called **search-destination**. 
+    In the *URL* field, enter **http://api.nal.usda.gov**.
     Set these additional properties:
 
 |Name|Value|
@@ -75,9 +75,9 @@ Note: For the api_key name, you can use the value DEMO_KEY, instead of your gene
 
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996120/d518b2aa-848a-11e5-8a3d-d8deff31a0c2.png)
 *   Run the application on Java Web Tomcat 7 Server
-    Right-click on the com.food.calculator project and choose Run As → Run on Server. Select the Manually define a new           server option and then choose SAP → Java Web Tomcat 7 Server. Choose Finish.
+    Right-click on the *com.food.calculator* project and choose *Run As → Run on Server*. Select the *Manually define* a new           server option and then choose *SAP → Java Web Tomcat 7 Server*. Choose *Finish*.
 
-NOTE: If the option Run on Server is missing, then right-click on the project and choose Properties → Project Facets         and make sure the Dynamic Web Module checkbox is selected and its version is 3.0.
+NOTE: If the option *Run on Server* is missing, then right-click on the project and choose *Properties → Project Facets*         and make sure the *Dynamic Web Module* checkbox is selected and its version is **3.0**.
 
 # Try out the Food Calculator Application.
 1. Open the application URL. It looks like this: http://<host>:<port>/com.food.calculator
