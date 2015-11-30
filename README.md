@@ -48,45 +48,14 @@ To run the application locally you need to:
     In the URL field, enter http://api.nal.usda.gov.
     Set these additional properties:
 
-<table style="width:1000px; height:100px;">
-  <thead>
-    <tr>
-      <th style="width:70%">Name</th>
-      <th style="width:30%">Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>&nbsp;&nbsp;&nbsp;api_key&nbsp;&nbsp;&nbsp;</th>
-      <td>generated_api_key</th>
-    </tr>
-    <tr>
-      <td>format</th>
-      <td>json</th>
-    </tr>
-    <tr>
-      <td>path</th>
-      <td>/ndb/nutrients/</th>
-    </tr>
-    <tr>
-      <td>ProxyType</th>
-      <td>Internet</th>
-    </tr>
-    <tr>
-      <td>scheme</th>
-      <td>http</th>
-    </tr>
-  </tbody>
-</table>
-<center>
 |Name                                           |                                                     Value  |
-|                :--------------:               |:----------------------------------------------------------:|
+|                :--------------              |----------------------------------------------------------:|
 |                   api_key                     |                                        <generated_api_key>  |
 |format	                                        |                                                       json |
 |path	                                        |                                            /ndb/nutrients/ |
 |ProxyType	                                    |                                                   Internet |
 |scheme	                                        |                                                       http |
-</center>
+
 
 Note: For the api_key name, you can use the value DEMO_KEY, instead of your generated key. There is a difference though. If you use the DEMO_KEY value, you will have access restrictions.
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996152/0d028088-848b-11e5-889c-ec93bca62c15.png)
