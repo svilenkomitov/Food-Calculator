@@ -48,11 +48,11 @@ To run the application locally you need to:
     In the URL field, enter http://api.nal.usda.gov.
     Set these additional properties:
 
-<table class="span12" style="width: 400%">
+<table style="width:100%">
   <thead>
     <tr>
-      <th style="width: 50%">Name</th>
-      <th style="width: 50%">Value</th>
+      <th style="width:70%">Name</th>
+      <th style="width:30%">Value</th>
     </tr>
   </thead>
   <tbody>
