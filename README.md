@@ -73,9 +73,9 @@ Note: For the api_key name, you can use the value DEMO_KEY, instead of your gene
 |format|json|
 |path|/ndb/search/|
 |ProxyType|Internet|
-|scheme|http| ![properties](https://cloud.githubusercontent.com/assets/7129907/10996120/d518b2aa-848a-11e5-8a3d-d8deff31a0c2.png)
+|scheme|http| 
 
-
+![properties](https://cloud.githubusercontent.com/assets/7129907/10996120/d518b2aa-848a-11e5-8a3d-d8deff31a0c2.png)
 
 
     3.5	Run the application on Java Web Tomcat 7 Server
