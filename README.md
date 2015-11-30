@@ -80,7 +80,7 @@ To run the application locally you need to:
 </table>
 |Name                                           |                                                     Value  |
 |:---------------------------------------------:|:----------------------------------------------------------:|
-|.................api_key.......................|                                        <generated_api_key>  |
+|<5 api_key                                     |                                        <generated_api_key>  |
 |format	                                        |                                                       json |
 |path	                                        |                                            /ndb/nutrients/ |
 |ProxyType	                                    |                                                   Internet |
