@@ -53,7 +53,7 @@ To run the application locally you need to:
  table th, table td { overflow: hidden; }
 </style>
 
-<table class="span12" width="400">
+<table class="span12" width="1000">
   <thead>
     <tr>
       <th style="width: 50%">Name</th>
