@@ -57,7 +57,7 @@ To run the application locally you need to:
   </thead>
   <tbody>
     <tr>
-      <td>api_key</th>
+      <td><br><br><br>api_key<br><br><br></th>
       <td>generated_api_key</th>
     </tr>
     <tr>
