@@ -27,10 +27,10 @@ These are the main components of the application:
 *	REST services for the whole communication.
 
 # What tools do you need to run the application?
-    •	[JDK 7 or higher](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
-    •	[Eclipse IDE](https://eclipse.org/downloads/)
-    •	[SAP HANA Cloud Platform SDK](https://help.hana.ondemand.com/help/frameset.htm?7613843c711e1014839a8273b0e91070.html) ([Java WEB Tomcat 7](https://tools.hana.ondemand.com/))
-    •	[Maven 3.x](https://maven.apache.org/)
+*	[JDK 7 or higher](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
+*	[Eclipse IDE](https://eclipse.org/downloads/)
+*	[SAP HANA Cloud Platform SDK](https://help.hana.ondemand.com/help/frameset.htm?7613843c711e1014839a8273b0e91070.html) ([Java WEB Tomcat 7](https://tools.hana.ondemand.com/))
+*	[Maven 3.x](https://maven.apache.org/)
 
 # How can you run the Food Calculator Application?
 To run the application locally you need to: 
