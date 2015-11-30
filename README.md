@@ -77,7 +77,7 @@ To run the application locally you need to:
 *   Run the application on Java Web Tomcat 7 Server
     Right-click on the *com.food.calculator* project and choose *Run As → Run on Server*. Select the *Manually define* a new           server option and then choose *SAP → Java Web Tomcat 7 Server*. Choose *Finish*.
 
-NOTE: If the option *Run on Server* is missing, then right-click on the project and choose *Properties → Project Facets*         and make sure the *Dynamic Web Module* checkbox is selected and its version is **3.0**.
+**NOTE**: If the option *Run on Server* is missing, then right-click on the project and choose *Properties → Project Facets*         and make sure the *Dynamic Web Module* checkbox is selected and its version is **3.0**.
 
 # Try out the Food Calculator Application.
 1. Open the application URL. It looks like this: ```http://<host>:<port>/com.food.calculator```
@@ -86,9 +86,9 @@ NOTE: If the option *Run on Server* is missing, then right-click on the project 
 
 3. You can choose between these options:
 
-*	Enter some information about your recipe.
-*	List all recipes from the database.
-*   Search a recipe by name.
+    *	Enter some information about your recipe.
+    *	List all recipes from the database.
+    *   Search a recipe by name.
 ![options](https://cloud.githubusercontent.com/assets/7129907/10996387/2e7c70a0-848d-11e5-8969-ecfa0106a9f2.png)
 
 4. Choose the *New Recipe* tile. Add the ingredients of the recipe. Later on you will get a nutrient report based on the ingredients you specified. Save all the recipe settings. All other users of the application will be able to read your recipe.
