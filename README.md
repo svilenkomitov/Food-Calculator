@@ -34,6 +34,7 @@ These are the main components of the application:
 
 # How can you run the Food Calculator Application?
 To run the application locally you need to: 
+
 1.	Download the Food Calculator Application from [here](https://github.com/svilenkomitov/Food-Calculator).
     The application is licensed under the Apache License, Version 2.0.
 2.	Import the project as an existing Maven project.
