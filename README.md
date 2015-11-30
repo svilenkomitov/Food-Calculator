@@ -7,22 +7,8 @@ For more information about the idea behind the project you can check our blog: [
 With the existing applications that enable tracking the food you eat, you either can’t create new recipes, or it’s very difficult to do that due to differences in measurement units. Or if such an application is user-friendly, it is not free. 
 The measurement units depend on the product condition. And, it is hard to calculate the nutrients of a single meal portion 
 
-
-
 +-------+----------+------+
 | Table Headings   | Here |
-+-------+----------+------+
-| Sub   | Headings | Too  |
-+=======+==========+======+
-| cell  | column spanning |
-+ spans +----------+------+
-| rows  | normal   | cell |
-+-------+----------+------+
-| multi | * cells can be  |
-| line  | * formatted     |
-| cells | * paragraphs    |
-| too   |                 |
-+-------+-----------------+
 
 
 # What are the advantages of the Food Calculator Application?
