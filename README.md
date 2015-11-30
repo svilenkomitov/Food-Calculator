@@ -48,11 +48,6 @@ To run the application locally you need to:
     In the URL field, enter http://api.nal.usda.gov.
     Set these additional properties:
 
-<style>
- table { table-layout: fixed; }
- table th, table td { overflow: hidden; }
-</style>
-
 <table class="span12" width="1000">
   <thead>
     <tr>
