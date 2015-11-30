@@ -85,6 +85,7 @@ NOTE: If the option *Run on Server* is missing, then right-click on the project 
 ![](https://cloud.githubusercontent.com/assets/7129907/10973033/6de23b52-83e4-11e5-9e56-13bc15ab8706.jpg)
 
 3. You can choose between these options:
+
 *	Enter some information about your recipe.
 *	List all recipes from the database.
 *   Search a recipe by name.
