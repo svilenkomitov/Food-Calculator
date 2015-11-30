@@ -48,6 +48,28 @@ To run the application locally you need to:
     In the URL field, enter http://api.nal.usda.gov.
     Set these additional properties:
 
+<style>
+ table { table-layout: fixed; }
+ table th, table td { overflow: hidden; }
+</style>
+
+<table class="span12">
+  <thead>
+    <tr>
+      <th style="width: 50%">Name</th>
+      <th style="width: 50%">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Val 1</th>
+      <td>Val 2</th>
+      <td>Val 3</th>
+      <td>Val 4</th>
+      <td>Val 5</th>
+    </tr>
+  </tbody>
+</table>
 |Name                                           |                                                     Value  |
 |:---------------------------------------------:|:----------------------------------------------------------:|
 |api_key                                        |                                        <generated_api_key> |
@@ -73,10 +95,10 @@ Note: For the api_key name, you can use the value DEMO_KEY, instead of your gene
 
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996120/d518b2aa-848a-11e5-8a3d-d8deff31a0c2.png)
 
-4.	Run the application on Java Web Tomcat 7 Server
+5)	Run the application on Java Web Tomcat 7 Server
     Right-click on the com.food.calculator project and choose Run As → Run on Server. Select the Manually define a new           server option and then choose SAP → Java Web Tomcat 7 Server. Choose Finish.
 
-    NOTE: If the option Run on Server is missing, then right-click on the project and choose Properties → Project Facets         and make sure the Dynamic Web Module checkbox is selected and its version is 3.0.
+NOTE: If the option Run on Server is missing, then right-click on the project and choose Properties → Project Facets         and make sure the Dynamic Web Module checkbox is selected and its version is 3.0.
 
 # Try out the Food Calculator Application.
 1)	Open the application URL. It looks like this: http://<host>:<port>/com.food.calculator
