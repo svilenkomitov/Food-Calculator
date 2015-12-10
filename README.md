@@ -1,7 +1,7 @@
 # Food-Calculator
 Food Calculator is а web application that can be used to calculate the nutrition report of a recipe. The idea of the application is to inform consumers what are nutrients (calories, protein, carbohydrates, fat, and so on) for a recipe. These nutrients depend on the basic products that the recipe contains.
 
-For more information about the idea behind the project you can check our blog: [link of the blog](https://www.google.bg/)
+For more information about the idea behind the project you can check our blog: http://scn.sap.com/community/developer-center/cloud-platform/blog/2015/12/10/food-calculator-application)
 
 # What do existing solutions offer?
 With the existing applications that enable tracking the food you eat, you either can’t create new recipes, or it’s very difficult to do that due to differences in measurement units. Or if such an application is user-friendly, it is not free. 
@@ -46,7 +46,7 @@ To run the application locally you need to:
     ![click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
 *   Get an API key from this site: http://ndb.nal.usda.gov/ndb/doc/index. In the *Gaining Access* section, choose *Sign up          now*, fill in the form and copy the generated key.
 *   Open the *Connectivity* tab and create a new destination called **report-destination**. 
-    In the *URL* field, enter '''http://api.nal.usda.gov'''.
+    In the *URL* field, enter ```http://api.nal.usda.gov```.
     Set these additional properties:
 
 
@@ -62,7 +62,7 @@ To run the application locally you need to:
 **NOTE**: For the *api_key* name, you can use the value **DEMO_KEY**, instead of your generated key. There is a difference though. If you use the **DEMO_KEY** value, you will have access restrictions.
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996152/0d028088-848b-11e5-889c-ec93bca62c15.png)
 *   Open the *Connectivity* tab and create a new destination called **search-destination**. 
-    In the *URL* field, enter '''http://api.nal.usda.gov'''.
+    In the *URL* field, enter ```http://api.nal.usda.gov```.
     Set these additional properties:
 
 |Name|Value|
