@@ -46,7 +46,7 @@ To run the application locally you need to:
     ![click :)](https://cloud.githubusercontent.com/assets/7129907/10973037/6dfc4132-83e4-11e5-8a77-3c8509c6be07.jpg)
 *   Get an API key from this site: http://ndb.nal.usda.gov/ndb/doc/index. In the *Gaining Access* section, choose *Sign up          now*, fill in the form and copy the generated key.
 *   Open the *Connectivity* tab and create a new destination called **report-destination**. 
-    In the *URL* field, enter **http://api.nal.usda.gov**.
+    In the *URL* field, enter '''http://api.nal.usda.gov'''.
     Set these additional properties:
 
 
@@ -62,7 +62,7 @@ To run the application locally you need to:
 **NOTE**: For the *api_key* name, you can use the value **DEMO_KEY**, instead of your generated key. There is a difference though. If you use the **DEMO_KEY** value, you will have access restrictions.
 ![properties](https://cloud.githubusercontent.com/assets/7129907/10996152/0d028088-848b-11e5-889c-ec93bca62c15.png)
 *   Open the *Connectivity* tab and create a new destination called **search-destination**. 
-    In the *URL* field, enter **http://api.nal.usda.gov**.
+    In the *URL* field, enter '''http://api.nal.usda.gov'''.
     Set these additional properties:
 
 |Name|Value|
