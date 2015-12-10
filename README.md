@@ -1,7 +1,7 @@
 # Food-Calculator
 Food Calculator is а web application that can be used to calculate the nutrition report of a recipe. The idea of the application is to inform consumers what are nutrients (calories, protein, carbohydrates, fat, and so on) for a recipe. These nutrients depend on the basic products that the recipe contains.
 
-For more information about the idea behind the project you can check our blog: http://scn.sap.com/community/developer-center/cloud-platform/blog/2015/12/10/food-calculator-application)
+For more information about the idea behind the project you can check out our blog: http://scn.sap.com/community/developer-center/cloud-platform/blog/2015/12/10/food-calculator-application
 
 # What do existing solutions offer?
 With the existing applications that enable tracking the food you eat, you either can’t create new recipes, or it’s very difficult to do that due to differences in measurement units. Or if such an application is user-friendly, it is not free. 
