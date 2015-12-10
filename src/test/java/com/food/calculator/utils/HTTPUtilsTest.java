@@ -22,7 +22,7 @@ public class HTTPUtilsTest {
 	public void testCreateURL() throws MalformedURLException {
 
 		Map<String, String> properties = new HashMap<>();
-		properties.put("api_key", "8SpljkHYGqCbAtWgYft0Ev4gKzKBvXoFXa2sA8Mo");
+		properties.put("api_key", "DEMO_KEY");
 		properties.put("format", "json");
 		properties.put("scheme", "http");
 		properties.put("path", "/ndb/search/");
@@ -32,7 +32,7 @@ public class HTTPUtilsTest {
 		List<NameValuePair> parameters = new ArrayList<>();
 		parameters.add(new BasicNameValuePair("q", "tomatoes"));
 		URL expectedURL = new URL(
-				"http://api.nal.usda.gov/ndb/search/?q=tomatoes&api_key=8SpljkHYGqCbAtWgYft0Ev4gKzKBvXoFXa2sA8Mo&format=json");
+				"http://api.nal.usda.gov/ndb/search/?q=tomatoes&api_key=DEMO_KEY&format=json");
 		URL actualURL = HTTPUtils.createURL(destConf.getAllProperties(), parameters);
 		assertEquals(expectedURL, actualURL);
 	}
